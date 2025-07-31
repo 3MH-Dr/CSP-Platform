@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Logle 聚合搜索</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="search-wrapper">
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-buttons">
+          <div id="addPlatform" class="add-button">+</div> <!-- 原来只有加号，这里加了减号、对号 -->
+          <div id="editPlatform" class="edit-button">−</div>
+          <div id="confirmEdit" class="confirm-button" style="display:none;">✔</div>
+        </div>
+      </div>
+      <img id="toggleSidebar" class="logo" src="icon.png" alt="切换" />
+      <div class="platform-label" id="platformName">B站</div>
+      <input type="text" id="searchInput" placeholder="请输入搜索关键词" onkeydown="handleKey(event)">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
